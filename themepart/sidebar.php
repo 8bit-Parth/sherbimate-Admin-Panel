@@ -44,11 +44,13 @@
               </p>
             </a>
           </li>
+          
+          <!-- Admin -->
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-user-tie"></i> 
               <p>
-                User
+                Admin
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -65,9 +67,33 @@
                   <p>View</p>
                 </a>
               </li>
-              </li>
+              </ul>
               
-            </ul>
+              <!-- User -->
+              <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-user-tie"></i> 
+              <p>
+                User
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="add-user_master.php" class="nav-link">
+                  <i class="fas fa-folder-plus nav-icon"></i> 
+                  <p>Add</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="display-user_master.php" class="nav-link">
+                  <i class="fas fa-eye nav-icon"></i> 
+                  <p>View</p>
+                </a>
+              </li>
+              </ul>
+          
+           
           </li>
 
           
