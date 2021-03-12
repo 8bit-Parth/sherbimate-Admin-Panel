@@ -85,7 +85,7 @@ if($_POST)
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" name="admin_email" placeholder="Enter Email">
+                    <input type="email" class="form-control" id="exampleInputEmail1" name="admin_email" placeholder="Enter Email" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>

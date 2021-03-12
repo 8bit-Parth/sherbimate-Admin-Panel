@@ -84,11 +84,11 @@ if($_POST)
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputBookingDate1">Booking Date</label>
-                    <input type="date" class="form-control" id="exampleInputBookingDate1" name="booking_date" placeholder="Enter Booking Date">
+                    <input type="date" class="form-control" id="exampleInputBookingDate1" name="booking_date" placeholder="Enter Booking Date" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputBookingAmount1">Booking Amount</label>
-                    <input type="number" class="form-control" id="exampleInputBookingAmount1" name="booking_amount" placeholder="Enter Booking Amount">
+                    <input type="number" class="form-control" id="exampleInputBookingAmount1" name="booking_amount" placeholder="Enter Booking Amount" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputBookingStatus1">Booking Status</label>
