@@ -98,7 +98,7 @@
                             echo "<td>{$servicerow['service_id']}</td>";
                             echo "<td>{$servicerow['service_name']}</td>";
                             echo "<td>{$servicerow['service_photo_path']}</td>";
-                            echo "<td><a href='edit-service_master.php?service_id={$servicerow['service_id']}'><img style='width:20px;' src='myimages/edit.png'>Edit</a>|<a href='display-service_master.php?did={$servicerow['service_id']}'><img style='width:20px;' src='myimages/delete.png'>Delete</a><td>";                        
+                            echo "<td align=center><a href='edit-service_master.php?service_id={$servicerow['service_id']}'><img style='width:20px;' src='myimages/edit.png'>Edit</a>&nbsp &nbsp|&nbsp &nbsp<a href='display-service_master.php?did={$servicerow['service_id']}'><img style='width:20px;' src='myimages/delete.png'>Delete</a><td>";                        
                             echo "</tr>";
                             
                             

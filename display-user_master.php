@@ -104,7 +104,7 @@
                             echo "<td>{$userrow['user_email']}</td>";
                             echo "<td>{$userrow['user_mobile']}</td>";
                             echo "<td>{$userrow['user_address']}</td>";
-                            echo "<td><a href='edit-user_master.php?user_id={$userrow['user_id']}'><img style='width:20px;' src='myimages/edit.png'>Edit</a>|<a href='display-user_master.php?did={$userrow['user_id']}'><img style='width:20px;' src='myimages/delete.png'>Delete</a><td>";                        
+                            echo "<td align=center><a href='edit-user_master.php?user_id={$userrow['user_id']}'><img style='width:20px;' src='myimages/edit.png'>Edit</a>&nbsp &nbsp|&nbsp &nbsp<a href='display-user_master.php?did={$userrow['user_id']}'><img style='width:20px;' src='myimages/delete.png'>Delete</a><td>";                        
                             echo "</tr>";
                             
                             
