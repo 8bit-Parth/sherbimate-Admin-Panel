@@ -8,7 +8,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | DataTables</title>
+  <title>Package | Display</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -67,11 +67,12 @@
                 <table id="example2" class="table table-bordered table-hover">
                   <thead>
                   <tr>
-                    <th>PACKAGE ID</th>
-                    <th>PACKAGE NAME</th>
-                    <th>PACKAGE DETAILS</th>
-                    <th>PACKAGE PRICE</th>
-                    <th>PACKAGE DURATION</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Details</th>
+                    <th>Price</th>
+                    <th>Duration</th>
+                    <th>Action</th>
                   </tr>
                   </thead>
                   <tbody>
@@ -109,11 +110,12 @@
                   </tbody>
                   <tfoot>
                   <tr>
-                    <th>PACKAGE ID</th>
-                    <th>PACKAGE NAME</th>
-                    <th>PACKAGE DETAILS</th>
-                    <th>PACKAGE PRICE</th>
-                    <th>PACKAGE DURATION</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Details</th>
+                    <th>Price</th>
+                    <th>Duration</th>
+                    <th>Action</th>
                   </tr>
                   </tfoot>
                 </table>

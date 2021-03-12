@@ -8,7 +8,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Display | FEEDBACK</title>
+  <title>Feedback | Display</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -67,11 +67,12 @@
                 <table id="example2" class="table table-bordered table-hover">
                   <thead>
                   <tr>
-                    <th>FEEDBACK ID</th>
-                    <th>WORKER ID</th>
-                    <th>USER ID</th>
-                    <th>FEEDBACK DETAILS</th>
-                    <th>FEEDBACK DATE</th>
+                    <th>Feedback Id</th>
+                    <th>Worker Id</th>
+                    <th>USER Id</th>
+                    <th>Details</th>
+                    <th>Date</th>
+                    <th>Action</th>
                   </tr>
                   </thead>
                   <tbody>
@@ -110,11 +111,12 @@
                   </tbody>
                   <tfoot>
                   <tr>
-                    <th>FEEDBACK ID</th>
-                    <th>WORKER ID</th>
-                    <th>USER ID</th>
-                    <th>FEEDBACK DETAILS</th>
-                    <th>FEEDBACK DATE</th>
+                    <th>Feedback Id</th>
+                    <th>Worker Id</th>
+                    <th>User Id</th>
+                    <th>Details</th>
+                    <th>Date</th>
+                    <th>Action</th>
                   </tr>
                   </tfoot>
                 </table>

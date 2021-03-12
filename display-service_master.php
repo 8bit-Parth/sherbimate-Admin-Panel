@@ -8,7 +8,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | DataTables</title>
+  <title>Service | Display</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -67,9 +67,10 @@
                 <table id="example2" class="table table-bordered table-hover">
                   <thead>
                   <tr>
-                    <th>SERVICE ID</th>
-                    <th>SERVICE NAME </th>
-                    <th>SERVICE PHOTO PATH</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Photo Path</th>
+                    <th>Action</th>
                   </tr>
                   </thead>
                   <tbody>
@@ -109,9 +110,10 @@
                   </tbody>
                   <tfoot>
                   <tr>
-                    <th>SERVICE ID</th>
-                    <th>SERVICE NAME </th>
-                    <th>SERVICE PHOTO PATH</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Photo Path</th>
+                    <th>Action</th>
                   </tr>
                   </tfoot>
                 </table>

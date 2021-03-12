@@ -8,7 +8,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | DataTables</title>
+  <title>Admin | Display</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -67,10 +67,11 @@
                 <table id="example2" class="table table-bordered table-hover">
                   <thead>
                   <tr>
-                    <th>ID</th>
-                    <th>NAME</th>
-                    <th>EMAIL</th>
-                    <th>PASSWORD</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Action</th>
                   </tr>
                   </thead>
                   <tbody>
@@ -97,7 +98,7 @@
                             echo "<td>{$adminrow['admin_name']}</td>";
                             echo "<td>{$adminrow['admin_email']}</td>";
                             echo "<td>{$adminrow['admin_password']}</td>";
-                            echo "<td align=center><a href='edit-admin_master.php?admin_id={$adminrow['admin_id']}'><img style='width:20px;' src='myimages/edit.png'></a> &nbsp &nbsp|&nbsp &nbsp<a href='display-admin_master.php?did={$adminrow['admin_id']}'><img style='width:20px;' src='myimages/delete.png'></a><td>";                        
+                            echo "<td align=center><a href='edit-admin_master.php?admin_id={$adminrow['admin_id']}'><img style='width:20px;' src='myimages/edit.png'></a>&nbsp &nbsp|&nbsp &nbsp<a href='display-admin_master.php?did={$adminrow['admin_id']}'><img style='width:20px;' src='myimages/delete.png'></a><td>";                        
                             echo "</tr>";
                         }
                        
@@ -105,10 +106,11 @@
                   </tbody>
                   <tfoot>
                   <tr>
-                    <th>ID</th>
-                    <th>NAME</th>
-                    <th>EMAIL</th>
-                    <th>PASSWORD</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Action</th>
                   </tr>
                   </tfoot>
                 </table>

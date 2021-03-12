@@ -8,7 +8,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | DataTables</title>
+  <title>Worker | Display</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -67,16 +67,16 @@
                 <table id="example2" class="table table-bordered table-hover">
                   <thead>
                   <tr>
-                    <th>WORKER ID</th>
-                    <th>WORKER NAME</th>
-                    <th>SERVICE ID</th>
-                    <th>WORKER PHOTO</th>
-                    <th>WORKER GENDER</th>
-                    <th>WORKER EMAIL</th>
-                    <th>WORKER MOBILE</th>
-                    <th>WORKER DOCUMENTS</th>
-                    <th>WORKER DETAILS</th>
-                    <th>WORKER EXPERTISE</th>
+                    <th>Worker Id</th>
+                    <th>Name</th>
+                    <th>Service Id</th>
+                    <th>Photo</th>
+                    <th>Gender</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>Documents</th>
+                    <th>Details</th>
+                    <th>Expertise</th>
                     <th>Action</th>
                   </tr>
                   </thead>
@@ -122,16 +122,16 @@
                   </tbody>
                   <tfoot>
                   <tr>
-                    <th>WORKER ID</th>
-                    <th>WORKER NAME</th>
-                    <th>SERVICE ID</th>
-                    <th>WORKER PHOTO</th>
-                    <th>WORKER GENDER</th>
-                    <th>WORKER EMAIL</th>
-                    <th>WORKER MOBILE</th>
-                    <th>WORKER DOCUMENTS</th>
-                    <th>WORKER DETAILS</th>
-                    <th>WORKER EXPERTISE</th> 
+                    <th>Worker Id</th>
+                    <th>Name</th>
+                    <th>Service Id</th>
+                    <th>Photo</th>
+                    <th>Gender</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>Documents</th>
+                    <th>Details</th>
+                    <th>Expertise</th>
                     <th>Action</th>
                   </tr>
                   </tfoot>

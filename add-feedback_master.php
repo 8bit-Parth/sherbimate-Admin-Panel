@@ -154,6 +154,17 @@ $(function () {
   bsCustomFileInput.init();
 });
 </script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#myform").validate();
+    });
+</script>
+<style>
+    .error{
+        color:red;
+    }
+</style>
 </body>
 </html>
 

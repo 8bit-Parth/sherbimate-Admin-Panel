@@ -8,7 +8,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | DataTables</title>
+  <title>Payment | Display</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -67,13 +67,14 @@
                 <table id="example2" class="table table-bordered table-hover">
                   <thead>
                   <tr>
-                    <th>PAYMENT ID</th>
-                    <th>BOOKING ID</th>
-                    <th>PAYMENT AMOUNT</th>
-                    <th>PAYMENT DETAILS</th>
-                    <th>PAYMENT METHOD</th>
-                    <th>PAYMENT DATE</th>
-                    <th>PAYMENT STATUS</th>
+                    <th>Payment Id</th>
+                    <th>Booking Id</th>
+                    <th>Amount</th>
+                    <th>Details</th>
+                    <th>Methods</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
                   </tr>
                   </thead>
                   <tbody>
@@ -113,13 +114,14 @@
                   </tbody>
                   <tfoot>
                   <tr>
-                    <th>PAYMENT ID</th>
-                    <th>BOOKING ID</th>
-                    <th>PAYMENT AMOUNT</th>
-                    <th>PAYMENT DETAILS</th>
-                    <th>PAYMENT METHOD</th>
-                    <th>PAYMENT DATE</th>
-                    <th>PAYMENT STATUS</th>
+                    <th>Payment Id</th>
+                    <th>Booking Id</th>
+                    <th>Amount</th>
+                    <th>Details</th>
+                    <th>Methods</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
                   </tr>
                   </tfoot>
                 </table>
