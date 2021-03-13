@@ -4,8 +4,8 @@ require './class/at-class.php';
 
 if($_POST)
 {   //$feedback_id = $_POST['feedback_id '];
-    //$worker_id = $_POST['worker_id '];
-    //$user_id  = $_POST['user_id '];
+    $worker_id = $_POST['worker_id '];
+    $user_id  = $_POST['user_id '];
     $feedback_details = $_POST['feedback_details'];
     $feedback_date = $_POST['feedback_date'];
     
@@ -24,7 +24,7 @@ if($_POST)
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | General Form Elements</title>
+  <title>Feedback | Add</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -79,13 +79,44 @@ if($_POST)
               <!-- form start -->
               <form role="form" method="post">
                 <div class="card-body">
+                    
+                  <div class="form-group">
+                    <label for="exampleInputWorkerID1">Worker ID</label>
+                    
+                    <select name="worker" class="form-control">
+                        <?php 
+                            $q = mysqli_query($connection, "select * from worker_master") or die(mysqli_error($connection));
+                            while($data = mysqli_fetch_array($q))
+                            {
+                                echo "<option value='{$data['worker_id']}'>{$data['worker_name']}</option>";
+                            }                            
+                        ?>
+                    </select>
+                    
+                  </div>
+                    
+                  <div class="form-group">
+                    <label for="exampleInputUserID1">User ID</label>
+                    
+                    <select name="user" class="form-control">
+                        <?php 
+                            $q = mysqli_query($connection, "select * from user_master") or die(mysqli_error($connection));
+                            while($data = mysqli_fetch_array($q))
+                            {
+                                echo "<option value='{$data['user_id']}'>{$data['user_name']}</option>";
+                            }                            
+                        ?>
+                    </select>
+                  
+                  </div>
+                    
                   <div class="form-group">
                     <label for="exampleInputFeedbackDetails1">Feedback Details</label>
-                    <input type="textarea" class="form-control" id="exampleInputFeedbackDetails1" name="feedback_details" placeholder="Enter Feedback Details">
+                    <input type="textarea" class="form-control" id="exampleInputFeedbackDetails1" name="feedback_details" placeholder="Enter Feedback Details" required>
                   </div>
                   <div class="form-group">
                       <label for="exampleInputFeedbackDate1">Feedback Date</label> 
-                    <input type="date" class="form-control" id="exampleInputFeedbackDate1" name="feedback_date" placeholder="Enter Feedback Date">
+                    <input type="date" class="form-control" id="exampleInputFeedbackDate1" name="feedback_date" placeholder="Enter Feedback Date" required>
                   </div>
                   
                  

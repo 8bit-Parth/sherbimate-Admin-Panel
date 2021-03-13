@@ -4,12 +4,11 @@ require './class/at-class.php';
 
 if($_POST)
 {   
-    //$admin_id = $_POST['admin_id'];
-    $admin_name = $_POST['admin_name'];
-    $admin_email = $_POST['admin_email'];
-    $admin_password = $_POST['admin_password'];
+    //$sub_service_id = $_POST['sub_service_id'];
+    $sub_service_name = $_POST['sub_service_name'];
+    $service_id = $_POST['service_id'];
     
-    $q = mysqli_query($connection, "insert into admin_master (admin_name,admin_email,admin_password)values('{$admin_name}','{$admin_email}','{$admin_password}')") or die(mysqli_error($connection));
+    $q = mysqli_query($connection, "insert into sub_services (sub_service_name)values('{$sub_service_name}')") or die(mysqli_error($connection));
     
     if($q)
     {
@@ -24,7 +23,7 @@ if($_POST)
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Admin | Add</title>
+  <title>Sub Service | Add</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -67,7 +66,7 @@ if($_POST)
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Admin Form</h1>
+            <h1>Sub Service Form</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -88,24 +87,33 @@ if($_POST)
             <!-- general form elements -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Admin details</h3>
+                <h3 class="card-title">Sub Service details</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
               <form role="form" method="post" id="myform">
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="exampleInputName1">Name</label><br>
-                    <input type="text" class="form-control" id="exampleInputName1" name="admin_name" placeholder="Enter Name" required>
+                    <label for="exampleInputSubServiceName1">Sub Service Name</label>
+                    <input type="text" class="form-control" id="exampleInputSubServiceName1" name="sub_service_name" placeholder="Enter Sub Service Name" required>
                   </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" name="admin_email" placeholder="Enter Email" required>
+                    
+                    <div class="form-group">
+                    <label for="exampleInputServiceID1">Service ID</label>
+                    
+                    <select name="service[]" class="form-control" multiple>
+                        <?php 
+                            $q = mysqli_query($connection, "select * from service_master") or die(mysqli_error($connection));
+                            while($data = mysqli_fetch_array($q))
+                            {
+                                echo "<option value='{$data['service_id']}'>{$data['service_name']}</option>";
+                            }                            
+                        ?>
+                    </select>
+                    
+                  
                   </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" name="admin_password" placeholder="Password" required>
-                  </div>
+                  
                 </div>
                 <!-- /.card-body -->
 

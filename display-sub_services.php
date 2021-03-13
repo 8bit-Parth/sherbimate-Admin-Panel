@@ -8,7 +8,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Service | Display</title>
+  <title>Sub Service | Display</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -60,7 +60,7 @@
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Service Table</h3>
+                <h3 class="card-title">Sub Service Table</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -69,7 +69,7 @@
                   <tr>
                     <th>Id</th>
                     <th>Name</th>
-                    <th>Photo Path</th>
+                    <th>Service Id</th>
                     <th>Action</th>
                   </tr>
                   </thead>
@@ -79,26 +79,26 @@
                       {
                           $did = $_GET['did'];
                           
-                          $deleteq = mysqli_query($connection,"delete from service_master where service_id = '{$did}'") or die(mysqli_error($connection));
+                          $deleteq = mysqli_query($connection,"delete from sub_services where sub_service_id = '{$did}'") or die(mysqli_error($connection));
                           if($deleteq)
                           {
                               echo "<script>alert('Record Deleted')</script>";
                           }
                       }
                         
-                        $selectq = mysqli_query($connection, "select * from service_master") or die(mysqli_error($connection));
+                        $selectq = mysqli_query($connection, "select * from sub_services") or die(mysqli_error($connection));
                         $count = mysqli_num_rows($selectq);
                         echo $count." Record Founds";
 
                         
                         
-                        while($servicerow = mysqli_fetch_array($selectq))
+                        while($subservicerow = mysqli_fetch_array($selectq))
                         { 
                             echo "<tr>";
-                            echo "<td>{$servicerow['service_id']}</td>";
-                            echo "<td>{$servicerow['service_name']}</td>";
-                            echo "<td>{$servicerow['service_photo_path']}</td>";
-                            echo "<td align=center><a href='edit-service_master.php?service_id={$servicerow['service_id']}'><img style='width:20px;' src='myimages/edit.png'></a>&nbsp &nbsp|&nbsp &nbsp<a href='display-service_master.php?did={$servicerow['service_id']}'><img style='width:20px;' src='myimages/delete.png'></a><td>";                        
+                            echo "<td>{$subservicerow['sub_service_id']}</td>";
+                            echo "<td>{$subservicerow['sub_service_name']}</td>";
+                            echo "<td>{$subservicerow['service_id']}</td>";
+                            echo "<td align=center><a href='edit-sub_services.php?sub_service_id={$subservicerow['sub_service_id']}'><img style='width:20px;' src='myimages/edit.png'></a>&nbsp &nbsp|&nbsp &nbsp<a href='display-sub_services.php?did={$subservicerow['sub_service_id']}'><img style='width:20px;' src='myimages/delete.png'></a><td>";                        
                             echo "</tr>";
                             
                             
@@ -112,7 +112,7 @@
                   <tr>
                     <th>Id</th>
                     <th>Name</th>
-                    <th>Photo Path</th>
+                    <th>Service Id</th>
                     <th>Action</th>
                   </tr>
                   </tfoot>
@@ -187,5 +187,6 @@
 </script>
 </body>
 </html>
+
 
 

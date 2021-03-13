@@ -101,7 +101,7 @@
                             echo "<td>{$feedbackrow['user_id']}</td>";
                             echo "<td>{$feedbackrow['feedback_details']}</td>";
                             echo "<td>{$feedbackrow['feedback_date']}</td>";
-                            echo "<td align=center><a href='edit-feedback_master.php?feedback_id={$feedbackrow['feedback_id']}'><img style='width:20px;' src='myimages/edit.png'>Edit</a>&nbsp &nbsp|&nbsp &nbsp<a href='display-feedback_master.php?did={$feedbackrow['feedback_id']}'><img style='width:20px;' src='myimages/delete.png'>Delete</a><td>";                        
+                            echo "<td align=center><a href='edit-feedback_master.php?feedback_id={$feedbackrow['feedback_id']}'><img style='width:20px;' src='myimages/edit.png'></a>&nbsp &nbsp|&nbsp &nbsp<a href='display-feedback_master.php?did={$feedbackrow['feedback_id']}'><img style='width:20px;' src='myimages/delete.png'></a><td>";                        
                             echo "</tr>";
                         }
                        

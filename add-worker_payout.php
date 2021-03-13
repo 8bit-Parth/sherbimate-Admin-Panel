@@ -5,7 +5,7 @@ require './class/at-class.php';
 if($_POST)
 {   //$worker_payout_id  = $_POST['worker_payout_id'];
     $worker_payout_amount = $_POST['worker_payout_amount'];
-    //$worker_id = $_POST['worker_id']; 
+    $worker_id = $_POST['worker_id']; 
     $worker_payout_date  = $_POST['worker_payout_date'];
     
     
@@ -24,7 +24,7 @@ if($_POST)
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | General Form Elements</title>
+  <title>Worker Payout | Add</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -87,15 +87,31 @@ if($_POST)
                   -->
                   <div class="form-group">
                     <label for="exampleInputWorkerPayoutAmount1">Worker Payout Amount</label>
-                    <input type="number" class="form-control" id="exampleInputWorkerPayoutAmount1" name="worker_payout_amount" placeholder="Enter Worker Payout Amount">
+                    <input type="number" class="form-control" id="exampleInputWorkerPayoutAmount1" name="worker_payout_amount" placeholder="Enter Worker Payout Amount" required>
                   </div>
                  <!-- <div class="form-group">
                     <label for="exampleInputWorkerID1">Worker ID</label>
                     <input type="number" class="form-control" id="exampleInputWorkerID1" name="worker_id" placeholder="Enter Worker ID">
                   </div> -->
+                 
+                 <div class="form-group">
+                    <label for="exampleInputWorkerID1">Worker ID</label>
+                    
+                    <select name="Worker" class="form-control" multiple>
+                        <?php 
+                            $q = mysqli_query($connection, "select * from worker_master") or die(mysqli_error($connection));
+                            while($data = mysqli_fetch_array($q))
+                            {
+                                echo "<option value='{$data['worker_id']}'>{$data['worker_name']}</option>";
+                            }                            
+                        ?>
+                    </select>
+                  
+                  </div>
+                 
                   <div class="form-group">
                     <label for="exampleInputWorkerPayoutDate1">Worker Payout Date</label>
-                    <input type="date" class="form-control" id="exampleInputWorkerPayoutDate1" name="worker_payout_date" placeholder="Enter Worker Payout Date">
+                    <input type="date" class="form-control" id="exampleInputWorkerPayoutDate1" name="worker_payout_date" placeholder="Enter Worker Payout Date" required>
                   </div>  
                   </div>
                 <!-- /.card-body -->

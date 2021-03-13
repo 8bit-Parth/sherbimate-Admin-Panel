@@ -104,7 +104,7 @@
                             echo "<td>{$paymentrow['payment_method']}</td>";
                             echo "<td>{$paymentrow['payment_date']}</td>";
                             echo "<td>{$paymentrow['payment_status']}</td>";
-                            echo "<td align=center><a href='edit-payment_master.php?payment_id={$paymentrow['payment_id']}'><img style='width:20px;' src='myimages/edit.png'>Edit</a>&nbsp &nbsp|&nbsp &nbsp<a href='display-payment_master.php?did={$paymentrow['payment_id']}'><img style='width:20px;' src='myimages/delete.png'>Delete</a><td>";                        
+                            echo "<td align=center><a href='edit-payment_master.php?payment_id={$paymentrow['payment_id']}'><img style='width:20px;' src='myimages/edit.png'></a>&nbsp &nbsp|&nbsp &nbsp<a href='display-payment_master.php?did={$paymentrow['payment_id']}'><img style='width:20px;' src='myimages/delete.png'></a><td>";                        
                             echo "</tr>";
                         }
                        

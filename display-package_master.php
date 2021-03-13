@@ -100,7 +100,7 @@
                             echo "<td>{$packagerow['package_details']}</td>";
                             echo "<td>{$packagerow['package_price']}</td>";
                             echo "<td>{$packagerow['package_duration']}</td>";
-                            echo "<td align=center><a href='edit-package_master.php?package_id={$packagerow['package_id']}'><img style='width:20px;' src='myimages/edit.png'>Edit</a>&nbsp &nbsp|&nbsp &nbsp<a href='display-package_master.php?did={$packagerow['package_id']}'><img style='width:20px;' src='myimages/delete.png'>Delete</a><td>";                        
+                            echo "<td align=center><a href='edit-package_master.php?package_id={$packagerow['package_id']}'><img style='width:20px;' src='myimages/edit.png'></a>&nbsp &nbsp|&nbsp &nbsp<a href='display-package_master.php?did={$packagerow['package_id']}'><img style='width:20px;' src='myimages/delete.png'></a><td>";                        
                             echo "</tr>";
                         }
                        

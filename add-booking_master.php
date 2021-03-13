@@ -4,8 +4,8 @@ require './class/at-class.php';
 
 if($_POST)
 {   ///$booking_id = $_POST['booking_id'];
-    //$worker_id = $_POST['worker_id'];
-    //$package_id = $_POST['package_id'];
+    $worker_id = $_POST['worker_id'];
+    $package_id = $_POST['package_id'];
     $booking_date = $_POST['booking_date'];
     $booking_amount = $_POST['booking_amount'];
     $booking_status = $_POST['booking_status'];
@@ -27,7 +27,7 @@ if($_POST)
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | General Form Elements</title>
+  <title>Booking | Add</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -82,6 +82,37 @@ if($_POST)
               <!-- form start -->
               <form role="form" method="post">
                 <div class="card-body">
+                    
+                    <div class="form-group">
+                    <label for="exampleInputWorkerID1">Worker ID</label>
+                    
+                    <select name="worker" class="form-control">
+                        <?php 
+                            $q = mysqli_query($connection, "select * from worker_master") or die(mysqli_error($connection));
+                            while($data = mysqli_fetch_array($q))
+                            {
+                                echo "<option value='{$data['worker_id']}'>{$data['worker_name']}</option>";
+                            }                            
+                        ?>
+                    </select>
+                  
+                  </div>
+                    
+                    <div class="form-group">
+                    <label for="exampleInputPackageID1">Package ID</label>
+                    
+                    <select name="package" class="form-control">
+                        <?php 
+                            $q = mysqli_query($connection, "select * from package_master") or die(mysqli_error($connection));
+                            while($data = mysqli_fetch_array($q))
+                            {
+                                echo "<option value='{$data['package_id']}'>{$data['package_name']}</option>";
+                            }                            
+                        ?>
+                    </select>
+                  
+                  </div>
+                  
                   <div class="form-group">
                     <label for="exampleInputBookingDate1">Booking Date</label>
                     <input type="date" class="form-control" id="exampleInputBookingDate1" name="booking_date" placeholder="Enter Booking Date" required>
@@ -92,7 +123,7 @@ if($_POST)
                   </div>
                   <div class="form-group">
                     <label for="exampleInputBookingStatus1">Booking Status</label>
-                    <input type="text" class="form-control" id="exampleInputBookingStatus1" name="booking_status" placeholder="Enter Booking Status">
+                    <input type="text" class="form-control" id="exampleInputBookingStatus1" name="booking_status" placeholder="Enter Booking Status" >
                   </div>
                  
                  

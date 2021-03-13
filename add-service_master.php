@@ -22,7 +22,7 @@ if($_POST)
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | General Form Elements</title>
+  <title>Service | Add</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -83,13 +83,13 @@ if($_POST)
                   </div> -->
                   <div class="form-group">
                     <label for="exampleInputServiceName1">Service Name</label>
-                    <input type="text" class="form-control" id="exampleInputServiceName1" name="service_name" placeholder="Enter Service Name">
+                    <input type="text" class="form-control" id="exampleInputServiceName1" name="service_name" placeholder="Enter Service Name" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputServicePhotoPath1">Service Photo Path</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile" name="service_photo_path">
+                        <input type="file" class="custom-file-input" id="exampleInputFile" name="service_photo_path" required>
                         <label class="custom-file-label" for="exampleInputServicePhotoPath1">Choose file</label>
                       </div>
                     </div>

@@ -102,7 +102,7 @@
                             echo "<td>{$bookingrow['booking_date']}</td>";
                             echo "<td>{$bookingrow['booking_amount']}</td>";
                             echo "<td>{$bookingrow['booking_status']}</td>";
-                            echo "<td align=center><a href='edit-booking_master.php?booking_id={$bookingrow['booking_id']}'><img style='width:20px;' src='myimages/edit.png'>Edit</a>&nbsp &nbsp|&nbsp &nbsp<a href='display-booking_master.php?did={$bookingrow['booking_id']}'><img style='width:20px;' src='myimages/delete.png'>Delete</a><td>";                        
+                            echo "<td align=center><a href='edit-booking_master.php?booking_id={$bookingrow['booking_id']}'><img style='width:20px;' src='myimages/edit.png'></a>&nbsp &nbsp|&nbsp &nbsp<a href='display-booking_master.php?did={$bookingrow['booking_id']}'><img style='width:20px;' src='myimages/delete.png'></a><td>";                        
                             echo "</tr>";
                         }
                        

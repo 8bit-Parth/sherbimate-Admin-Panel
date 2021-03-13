@@ -25,7 +25,7 @@ if($_POST)
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | General Form Elements</title>
+  <title>User | Add</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -86,31 +86,31 @@ if($_POST)
                   </div>-->
                   <div class="form-group">
                     <label for="exampleInputUserName1">User Name</label>
-                    <input type="text" class="form-control" id="exampleInputUserName1" name="user_name" placeholder="Enter User Name">
+                    <input type="text" class="form-control" id="exampleInputUserName1" name="user_name" placeholder="Enter User Name" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputUserGender1">User Gender</label>
                      <div class="custom-control custom-radio">
-                          <input class="custom-control-input" type="radio" id="customRadio1" Value="Male" name="user_gender">
+                          <input class="custom-control-input" type="radio" id="customRadio1" Value="Male" name="user_gender" required>
                           <label for="customRadio1" class="custom-control-label">Male</label>
                      </div>
                      <div class="custom-control custom-radio">
-                          <input class="custom-control-input" type="radio" id="customRadio2" Value="Female" name="user_gender">
+                          <input class="custom-control-input" type="radio" id="customRadio2" Value="Female" name="user_gender" required>
                           <label for="customRadio2" class="custom-control-label">Female</label>
                      </div>
                      
                   </div>
                   <div class="form-group">
                     <label for="exampleInputUserEmail1">User Email</label>
-                    <input type="email" class="form-control" id="exampleInputUserEmail1" name="user_email" placeholder="Enter User Email">
+                    <input type="email" class="form-control" id="exampleInputUserEmail1" name="user_email" placeholder="Enter User Email" required>
                   </div> 
                   <div class="form-group">
                     <label for="exampleInputUserMobile1">User Mobile</label>
-                    <input type="number" class="form-control" id="exampleInputUserMobile1" name="user_mobile" placeholder="Enter User Mobile">
+                    <input type="number" class="form-control" id="exampleInputUserMobile1" name="user_mobile" placeholder="Enter User Mobile" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputUserAddress1">User Address</label>
-                    <input type="text" class="form-control" id="exampleInputUserAddress1" name="user_address" placeholder="Enter User Address">
+                    <input type="text" class="form-control" id="exampleInputUserAddress1" name="user_address" placeholder="Enter User Address" required>
                   </div>
                  
                  

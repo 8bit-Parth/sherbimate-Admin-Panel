@@ -112,7 +112,7 @@
                             echo "<td>{$workerrow['worker_documents']}</td>";
                             echo "<td>{$workerrow['worker_details']}</td>";
                             echo "<td>{$workerrow['worker_expertise']}</td>";
-                            echo "<td align=center><a href='edit-worker_master.php?worker_id={$workerrow['worker_id']}'><img style='width:20px;' src='myimages/edit.png'>Edit</a>&nbsp &nbsp|&nbsp &nbsp<a href='display-worker_master.php?did={$workerrow['worker_id']}'><img style='width:20px;' src='myimages/delete.png'>Delete</a><td>";                        
+                            echo "<td align=center><a href='edit-worker_master.php?worker_id={$workerrow['worker_id']}'><img style='width:20px;' src='myimages/edit.png'></a>&nbsp &nbsp|&nbsp &nbsp<a href='display-worker_master.php?did={$workerrow['worker_id']}'><img style='width:20px;' src='myimages/delete.png'></a><td>";                        
                             echo "</tr>";
                         }
                        

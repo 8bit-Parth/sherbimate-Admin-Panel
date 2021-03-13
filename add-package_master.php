@@ -24,7 +24,7 @@ if($_POST)
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | General Form Elements</title>
+  <title>Package | Add</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -96,19 +96,19 @@ if($_POST)
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputPackageName1">Package Name</label>
-                    <input type="text" class="form-control" id="exampleInputPackageName1" name="package_name" placeholder="Enter Package Name">
+                    <input type="text" class="form-control" id="exampleInputPackageName1" name="package_name" placeholder="Enter Package Name" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPackageDetails1">Package Details</label>
-                    <input type="text" class="form-control" id="exampleInputPackageDetails1" name="package_details" placeholder="Enter Package Details">
+                    <input type="text" class="form-control" id="exampleInputPackageDetails1" name="package_details" placeholder="Enter Package Details" >
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPackagePrice1">Package Price</label>
-                    <input type="number" class="form-control" id="exampleInputPackagePrice1" name="package_price" placeholder="Enter Package Price">
+                    <input type="number" class="form-control" id="exampleInputPackagePrice1" name="package_price" placeholder="Enter Package Price" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPackageDuration1">Package Duration</label>
-                    <input type="text" class="form-control" id="exampleInputPackageDetails1" name="package_duration" placeholder="Enter Package Duration">
+                    <input type="text" class="form-control" id="exampleInputPackageDetails1" name="package_duration" placeholder="Enter Package Duration" required>
                   </div>
                  
                  

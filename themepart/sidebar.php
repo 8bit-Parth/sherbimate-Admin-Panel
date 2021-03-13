@@ -161,10 +161,34 @@
                 </a>
               </li>
               </ul>
+                   
+                  <!--Sub Service -->
+               <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa fa-wrench" aria-hidden="true""></i> 
+              <p>
+                Sub Service
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="add-sub_services.php" class="nav-link">
+                  <i class="fas fa-folder-plus nav-icon"></i> 
+                  <p>Add</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="display-sub_services.php" class="nav-link">
+                  <i class="fas fa-eye nav-icon"></i> 
+                  <p>View</p>
+                </a>
+              </li>
+              </ul>
                   <!--Package-->
               <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-user-tie"></i> 
+              <i class="nav-icon fas fa-cube"></i> 
               <p>
                 Package
                 <i class="right fas fa-angle-left"></i>

@@ -100,7 +100,7 @@
                             echo "<td>{$workerpayoutrow['worker_payout_amount']}</td>";
                             echo "<td>{$workerpayoutrow['worker_id']}</td>";
                             echo "<td>{$workerpayoutrow['worker_payout_date']}</td>";
-                            echo "<td align=center><a href='edit-worker_payout.php?worker_payout_id={$workerpayoutrow['worker_payout_id']}'><img style='width:20px;' src='myimages/edit.png'>Edit</a>&nbsp &nbsp|&nbsp &nbsp<a href='display-worker_payout.php?did={$workerpayoutrow['worker_payout_id']}'><img style='width:20px;' src='myimages/delete.png'>Delete</a><td>";                        
+                            echo "<td align=center><a href='edit-worker_payout.php?worker_payout_id={$workerpayoutrow['worker_payout_id']}'><img style='width:20px;' src='myimages/edit.png'></a>&nbsp &nbsp|&nbsp &nbsp<a href='display-worker_payout.php?did={$workerpayoutrow['worker_payout_id']}'><img style='width:20px;' src='myimages/delete.png'></a><td>";                        
                             echo "</tr>";
                         }
                        

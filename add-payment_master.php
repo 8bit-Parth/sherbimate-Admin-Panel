@@ -4,7 +4,7 @@ require './class/at-class.php';
 
 if($_POST)
 {   //$payment_id  = $_POST['payment_id '];
-    //$booking_id  = $_POST['booking_id '];
+    $booking_id  = $_POST['booking_id '];
     $payment_amount = $_POST['payment_amount'];
     $payout_details = $_POST['payout_details'];
     $payment_method = $_POST['payment_method'];
@@ -28,7 +28,7 @@ if($_POST)
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | General Form Elements</title>
+  <title>Payment | Add</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -83,21 +83,38 @@ if($_POST)
               <!-- form start -->
               <form role="form" method="post">
                 <div class="card-body">
+                    
+                    <div class="form-group">
+                    <label for="exampleInputBookingID1">Service ID</label>
+                    
+                    <select name="booking" class="form-control" multiple>
+                        <?php 
+                            $q = mysqli_query($connection, "select * from booking_master") or die(mysqli_error($connection));
+                            while($data = mysqli_fetch_array($q))
+                            {
+                                echo "<option value='{$data['booking_id']}'>{$data['booking_name']}</option>";
+                            }                            
+                        ?>
+                    </select>
+                    
+                  
+                  </div>
+                    
                   <div class="form-group">
                     <label for="exampleInputPaymentAmount1">Payment Amount</label>
-                    <input type="number" class="form-control" id="exampleInputPaymentAmount1" name="payment_amount" placeholder="Enter Payment Amount">
+                    <input type="number" class="form-control" id="exampleInputPaymentAmount1" name="payment_amount" placeholder="Enter Payment Amount" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPayoutDetails1">Payout Details</label>
-                    <input type="textarea" class="form-control" id="exampleInputPayoutDetails1" name="payout_details" placeholder="Enter Payout Details">
+                    <input type="textarea" class="form-control" id="exampleInputPayoutDetails1" name="payout_details" placeholder="Enter Payout Details" > 
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPaymentMethod1">Payment Method</label>
-                    <input type="text" class="form-control" id="exampleInputPaymentMethod1" name="payment_method" placeholder="Enter Payment Method">
+                    <input type="text" class="form-control" id="exampleInputPaymentMethod1" name="payment_method" placeholder="Enter Payment Method" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPaymentDate1">Payment Date</label>
-                    <input type="date" class="form-control" id="exampleInputPaymentDate1" name="payment_date" placeholder="Enter Payment Date">
+                    <input type="date" class="form-control" id="exampleInputPaymentDate1" name="payment_date" placeholder="Enter Payment Date" required>
                   </div>  
                   <div class="form-group">
                     <label for="exampleInputPaymentStatus1">Payment Status</label>
