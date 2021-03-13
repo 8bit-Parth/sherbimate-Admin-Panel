@@ -95,7 +95,7 @@
               <!--Worker -->
               <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-user-hard-hat"></i> 
+              <i class="nav-icon fas fa-id-badge"></i> 
               <p>
                 Worker
                 <i class="right fas fa-angle-left"></i>
@@ -187,7 +187,7 @@
                   <!--Payment -->
               <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-user-tie"></i> 
+              <i class="nav-icon fas fa-money-bill"></i> 
               <p>
                 Payment
                 <i class="right fas fa-angle-left"></i>
@@ -210,7 +210,7 @@
                   <!-- Worker Payout -->
               <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-user-tie"></i> 
+              <i class="nav-icon fas fa-wallet"></i> 
               <p>
                 Worker Payout
                 <i class="right fas fa-angle-left"></i>
@@ -233,7 +233,7 @@
               <!-- Feedback -->
               <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-user-tie"></i> 
+              <i class="nav-icon fas fa-comment-alt"></i> 
               <p>
                 Feedback
                 <i class="right fas fa-angle-left"></i>
@@ -242,7 +242,7 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="add-feedback_master.php" class="nav-link">
-                  <i class="fas fa-folder-plus nav-icon"></i> 
+                  <i class="fas fa-folder-plus nav-icon"></i>
                   <p>Add</p>
                 </a>
               </li>
