@@ -9,7 +9,7 @@ if($_POST)
     $feedback_details = $_POST['feedback_details'];
     $feedback_date = $_POST['feedback_date'];
     
-    $q = mysqli_query($connection, "insert into feedback_master (feedback_details,feedback_date)values('{$feedback_details}','{$feedback_date}')") or die(mysqli_error($connection));
+    $q = mysqli_query($connection, "insert into feedback_master (worker_id,user_id,feedback_details,feedback_date)values('{$worker_id}','{$user_id}','{$feedback_details}','{$feedback_date}')") or die(mysqli_error($connection));
     
     if($q)
     {

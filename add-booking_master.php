@@ -6,13 +6,14 @@ if($_POST)
 {   ///$booking_id = $_POST['booking_id'];
     $worker_id = $_POST['worker_id'];
     $package_id = $_POST['package_id'];
+    //$sub_service_id = $_POST['sub_service_id'];
     $booking_date = $_POST['booking_date'];
     $booking_amount = $_POST['booking_amount'];
     $booking_status = $_POST['booking_status'];
     
     
     
-    $q = mysqli_query($connection, "insert into booking_master (booking_date,booking_amount,booking_status)values('{$booking_date}','{$booking_amount}','{$booking_status}')") or die(mysqli_error($connection));
+    $q = mysqli_query($connection, "insert into booking_master (worker_id,package_id,booking_date,booking_amount,booking_status)values('{$worker_id}','{$package_id}','{$booking_date}','{$booking_amount}','{$booking_status}')") or die(mysqli_error($connection));
     
     if($q)
     {
