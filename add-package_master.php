@@ -4,6 +4,7 @@ require './class/at-class.php';
 
 if($_POST)
 {   //$package_id = $_POST['package_id'];
+    $sub_service_id = $_POST['sub_service_id'];
     $package_name = $_POST['package_name'];
     $package_details = $_POST['package_details'];
     $package_price = $_POST['package_price'];
@@ -98,6 +99,24 @@ if($_POST)
                     <label for="exampleInputPackageName1">Package Name</label>
                     <input type="text" class="form-control" id="exampleInputPackageName1" name="package_name" placeholder="Enter Package Name" required>
                   </div>
+                    
+                    <div class="form-group">
+                    <label for="exampleInputSubServiceID1">Sub Service ID</label>
+                    
+                    <select name="subservice" class="form-control" multiple>
+                        <?php 
+                            $q = mysqli_query($connection, "select * from sub_services") or die(mysqli_error($connection));
+                            while($data = mysqli_fetch_array($q))
+                            {
+                                echo "<option value='{$data['sub_service_id']}'>{$data['sub_service_name']}</option>";
+                            }                            
+                        ?>
+                    </select>
+                    
+                  
+                  </div>
+
+                    
                   <div class="form-group">
                     <label for="exampleInputPackageDetails1">Package Details</label>
                     <input type="text" class="form-control" id="exampleInputPackageDetails1" name="package_details" placeholder="Enter Package Details" >
