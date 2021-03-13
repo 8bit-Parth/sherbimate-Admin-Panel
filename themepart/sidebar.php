@@ -72,7 +72,7 @@
               <!-- User -->
               <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-user-tie"></i> 
+              <i class="nav-icon fas fa-user"></i> 
               <p>
                 User
                 <i class="right fas fa-angle-left"></i>
@@ -92,6 +92,174 @@
                 </a>
               </li>
               </ul>
+              <!--Worker -->
+              <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-user-hard-hat"></i> 
+              <p>
+                Worker
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="add-worker_master.php" class="nav-link">
+                  <i class="fas fa-folder-plus nav-icon"></i> 
+                  <p>Add</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="display-worker_master.php" class="nav-link">
+                  <i class="fas fa-eye nav-icon"></i> 
+                  <p>View</p>
+                </a>
+              </li>
+              </ul>
+                  <!--Booking -->
+              <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-calendar-alt"></i>  
+              <p>
+                Booking
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="add-booking_master.php" class="nav-link">
+                  <i class="fas fa-folder-plus nav-icon"></i> 
+                  <p>Add</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="display-booking_master.php" class="nav-link">
+                  <i class="fas fa-eye nav-icon"></i> 
+                  <p>View</p>
+                </a>
+              </li>
+              </ul>
+                  <!-- Service -->
+              <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa fa-wrench" aria-hidden="true""></i> 
+              <p>
+                Service
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="add-service_master.php" class="nav-link">
+                  <i class="fas fa-folder-plus nav-icon"></i> 
+                  <p>Add</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="display-service_master.php" class="nav-link">
+                  <i class="fas fa-eye nav-icon"></i> 
+                  <p>View</p>
+                </a>
+              </li>
+              </ul>
+                  <!--Package-->
+              <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-user-tie"></i> 
+              <p>
+                Package
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="add-package_master.php" class="nav-link">
+                  <i class="fas fa-folder-plus nav-icon"></i> 
+                  <p>Add</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="display-package_master.php" class="nav-link">
+                  <i class="fas fa-eye nav-icon"></i> 
+                  <p>View</p>
+                </a>
+              </li>
+              </ul>
+                  <!--Payment -->
+              <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-user-tie"></i> 
+              <p>
+                Payment
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="add-payment_master.php" class="nav-link">
+                  <i class="fas fa-folder-plus nav-icon"></i> 
+                  <p>Add</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="display-payment_master.php" class="nav-link">
+                  <i class="fas fa-eye nav-icon"></i> 
+                  <p>View</p>
+                </a>
+              </li>
+              </ul>
+                  <!-- Worker Payout -->
+              <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-user-tie"></i> 
+              <p>
+                Worker Payout
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="add-worker_payout.php" class="nav-link">
+                  <i class="fas fa-folder-plus nav-icon"></i> 
+                  <p>Add</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="display-worker_payout.php" class="nav-link">
+                  <i class="fas fa-eye nav-icon"></i> 
+                  <p>View</p>
+                </a>
+              </li>
+              </ul>
+              <!-- Feedback -->
+              <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-user-tie"></i> 
+              <p>
+                Feedback
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="add-feedback_master.php" class="nav-link">
+                  <i class="fas fa-folder-plus nav-icon"></i> 
+                  <p>Add</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="display-feedback_master.php" class="nav-link">
+                  <i class="fas fa-eye nav-icon"></i> 
+                  <p>View</p>
+                </a>
+              </li>
+              </ul>    
+          
+          
+          
+          
+          
+          
+                  
           
            
           </li>
