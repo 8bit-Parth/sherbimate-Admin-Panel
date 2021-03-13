@@ -13,23 +13,24 @@ if($_POST)
     $worker_documents = $_POST['worker_documents'];
     $worker_details = $_POST['worker_details'];
     $worker_expertise = $_POST['worker_expertise'];
-                        $temp = null;
-                        $arr = array();
-                        $arr = $_POST['service']; 
-                        for($i=0;$i<$arr.length();$i++)
-                        {
-                            if($i==0)
-                            {
-                               $temp = $temp.$arr[$i];
-                            }
-                             else {
-                                    $temp = $temp.",".$arr[$i];
-                             }
-                            
-                        }
-                                
-                    
+                        
+    $temp = null;                 
+    $arr = array();             
+    $arr = $_POST['service'];                 
+    for($i=0;$i<$arr.sizeof();$i++)
+    {
+        if($i==0)
+        {
+            $temp = $temp.$arr[$i];
+        }
+        else 
+        {
+            $temp = $temp.",".$arr[$i];
+        }
+    }
     
+    settype(&temp,"string");
+   
     $q = mysqli_query($connection, "insert into worker_master (worker_name,worker_photo,worker_gender,worker_email,worker_mobile,worker_documents,worker_details,worker_expertise,service_id)values('{$worker_name}','{$worker_photo}','{$worker_gender}','{$worker_email}','{$worker_mobile}','{$worker_documents}','{$worker_details}','{$worker_expertise}','{$temp}')") or die(mysqli_error($connection));
     
     if($q)
@@ -109,16 +110,36 @@ if($_POST)
                   
                   <div class="form-group">
                     <label for="exampleInputServiceID1">Service ID</label>
-                    
+                    <!--
                     <select name="service[]" class="form-control" multiple>
-                        <?php 
+                        <?php
+                        /*
                             $q = mysqli_query($connection, "select * from service_master") or die(mysqli_error($connection));
                             while($data = mysqli_fetch_array($q))
                             {
                                 echo "<option value='{$data['service_id']}'>{$data['service_name']}</option>";
                             }                            
-                        ?>
+                        */
+                         ?>
+                         */
                     </select>
+                    -->
+                    <?php
+                        
+                        $q = mysqli_query($connection, "select * from service_master") or die(mysqli_error($connection));
+                            while($data = mysqli_fetch_array($q))
+                            {
+                                echo "<br> <input type=checkbox name=service[] value='{$data['service_id']}'> {$data['service_name']}";
+                            }
+                    
+                    ?>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     
                   
                   </div>

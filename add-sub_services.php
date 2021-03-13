@@ -6,9 +6,9 @@ if($_POST)
 {   
     //$sub_service_id = $_POST['sub_service_id'];
     $sub_service_name = $_POST['sub_service_name'];
-    $service_id = $_POST['service_id'];
+    $service_id = $_POST['service'];
     
-    $q = mysqli_query($connection, "insert into sub_services (sub_service_name)values('{$sub_service_name}')") or die(mysqli_error($connection));
+    $q = mysqli_query($connection, "insert into sub_services (sub_service_name,service_id) values('{$sub_service_name}','{$service_id}')") or die(mysqli_error($connection));
     
     if($q)
     {
@@ -52,7 +52,7 @@ if($_POST)
   <!-- Navbar -->
   <?php
     include './themepart/navbar.php';
-    include './themepart/sidebar.php';
+    include './themepart/sidebar.php'; 
   ?>
   <!-- /.navbar -->
 
@@ -101,7 +101,8 @@ if($_POST)
                     <div class="form-group">
                     <label for="exampleInputServiceID1">Service ID</label>
                     
-                    <select name="service[]" class="form-control" multiple>
+                    <select name="service" class="form-control" required >
+                        <option disabled>Select Service</option>
                         <?php 
                             $q = mysqli_query($connection, "select * from service_master") or die(mysqli_error($connection));
                             while($data = mysqli_fetch_array($q))
