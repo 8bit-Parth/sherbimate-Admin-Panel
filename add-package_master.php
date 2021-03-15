@@ -1,10 +1,10 @@
 <?php
 session_start();
 require './class/at-class.php';
-
+$sub_service_id;
 if($_POST)
 {   //$package_id = $_POST['package_id'];
-    $sub_service_id = $_POST['sub_service_id'];
+    $sub_service_id = $_POST['subservice'];
     $package_name = $_POST['package_name'];
     $package_details = $_POST['package_details'];
     $package_price = $_POST['package_price'];
@@ -93,7 +93,7 @@ if($_POST)
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form role="form" method="post">
+              <form role="form" id="myform" method="post">
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputPackageName1">Package Name</label>
@@ -103,7 +103,8 @@ if($_POST)
                     <div class="form-group">
                     <label for="exampleInputSubServiceID1">Sub Service ID</label>
                     
-                    <select name="subservice" class="form-control" multiple>
+                    <select name="subservice" class="form-control" required>
+                        <option value="" selected disable>Select Sub Service</option>
                         <?php 
                             $q = mysqli_query($connection, "select * from sub_services") or die(mysqli_error($connection));
                             while($data = mysqli_fetch_array($q))
@@ -119,7 +120,7 @@ if($_POST)
                     
                   <div class="form-group">
                     <label for="exampleInputPackageDetails1">Package Details</label>
-                    <input type="text" class="form-control" id="exampleInputPackageDetails1" name="package_details" placeholder="Enter Package Details" >
+                    <input type="text" class="form-control" id="exampleInputPackageDetails1" name="package_details" placeholder="Enter Package Details" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPackagePrice1">Package Price</label>
@@ -127,7 +128,7 @@ if($_POST)
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPackageDuration1">Package Duration</label>
-                    <input type="text" class="form-control" id="exampleInputPackageDetails1" name="package_duration" placeholder="Enter Package Duration" required>
+                    <input type="text" class="form-control" id="exampleInputPackageDuration1" name="package_duration" placeholder="Enter Package Duration" required>
                   </div>
                  
                  
@@ -135,7 +136,7 @@ if($_POST)
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
               </form>
             </div>

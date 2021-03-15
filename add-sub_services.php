@@ -101,8 +101,8 @@ if($_POST)
                     <div class="form-group">
                     <label for="exampleInputServiceID1">Service ID</label>
                     
-                    <select name="service" class="form-control" required >
-                        <option disabled>Select Service</option>
+                    <select name="service" class="form-control" required>
+                        <option value="" disabled selected>Select Service</option>
                         <?php 
                             $q = mysqli_query($connection, "select * from service_master") or die(mysqli_error($connection));
                             while($data = mysqli_fetch_array($q))

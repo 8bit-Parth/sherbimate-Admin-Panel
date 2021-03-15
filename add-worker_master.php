@@ -29,7 +29,6 @@ if($_POST)
         }
     }
     
-    settype(&temp,"string");
    
     $q = mysqli_query($connection, "insert into worker_master (worker_name,worker_photo,worker_gender,worker_email,worker_mobile,worker_documents,worker_details,worker_expertise,service_id)values('{$worker_name}','{$worker_photo}','{$worker_gender}','{$worker_email}','{$worker_mobile}','{$worker_documents}','{$worker_details}','{$worker_expertise}','{$temp}')") or die(mysqli_error($connection));
     
