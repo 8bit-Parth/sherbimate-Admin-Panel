@@ -10,7 +10,7 @@ if($_POST)
     $package_price = $_POST['package_price'];
     $package_duration = $_POST['package_duration'];
     
-    $q = mysqli_query($connection, "insert into package_master (sub_service_id,package_name,package_details,package_price,package_duration)values('{$sub_service_id}','{$package_name}','{$package_details}','{$package_price}','{$package_duration}')") or die(mysqli_error($connection));
+    $q = mysqli_query($connection, "insert into package_master (sub_service_id,package_name,package_details,package_price,package_duration) values('{$sub_service_id}','{$package_name}','{$package_details}','{$package_price}','{$package_duration}')") or die(mysqli_error($connection));
     
     if($q)
     {
