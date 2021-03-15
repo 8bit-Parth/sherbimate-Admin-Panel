@@ -13,7 +13,7 @@ if($_POST)
     
     
     
-    $q = mysqli_query($connection, "insert into payment_master (payment_amount,payout_details,payment_method,payment_date,payment_status)values('{$payment_amount}','{$payout_details}','{$payment_method}','{$payment_date}','{$payment_status}')") or die(mysqli_error($connection));
+    $q = mysqli_query($connection, "insert into payment_master (booking_id,payment_amount,payout_details,payment_method,payment_date,payment_status)values('{$booking_id}','{$payment_amount}','{$payout_details}','{$payment_method}','{$payment_date}','{$payment_status}')") or die(mysqli_error($connection));
     
     if($q)
     {
@@ -85,9 +85,9 @@ if($_POST)
                 <div class="card-body">
                     
                     <div class="form-group">
-                    <label for="exampleInputBookingID1">Service ID</label>
+                    <label for="exampleInputBookingID1">Booking ID</label>
                     
-                    <select name="booking" class="form-control" multiple>
+                    <select name="booking" class="form-control">
                         <?php 
                             $q = mysqli_query($connection, "select * from booking_master") or die(mysqli_error($connection));
                             while($data = mysqli_fetch_array($q))

@@ -9,7 +9,7 @@ if($_POST)
     $worker_payout_date  = $_POST['worker_payout_date'];
     
     
-    $q = mysqli_query($connection, "insert into worker_payout (worker_payout_amount,worker_payout_date)values('{$worker_payout_amount}','{$worker_payout_date}')") or die(mysqli_error($connection));
+    $q = mysqli_query($connection, "insert into worker_payout (worker_id,worker_payout_amount,worker_payout_date)values('{$worker_id}','{$worker_payout_amount}','{$worker_payout_date}')") or die(mysqli_error($connection));
     
     if($q)
     {
@@ -97,7 +97,7 @@ if($_POST)
                  <div class="form-group">
                     <label for="exampleInputWorkerID1">Worker ID</label>
                     
-                    <select name="Worker" class="form-control" multiple>
+                    <select name="Worker" class="form-control">
                         <?php 
                             $q = mysqli_query($connection, "select * from worker_master") or die(mysqli_error($connection));
                             while($data = mysqli_fetch_array($q))
