@@ -81,13 +81,13 @@ if($_POST)
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form role="form" method="post">
+              <form role="form" method="post" id="myform">
                 <div class="card-body">
                     
                     <div class="form-group">
                     <label for="exampleInputBookingID1">Booking ID</label>
                     
-                    <select name="booking" class="form-control">
+                    <select name="booking" class="form-control" required>
                         <?php 
                             $q = mysqli_query($connection, "select * from booking_master") or die(mysqli_error($connection));
                             while($data = mysqli_fetch_array($q))
@@ -106,7 +106,7 @@ if($_POST)
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPayoutDetails1">Payout Details</label>
-                    <input type="textarea" class="form-control" id="exampleInputPayoutDetails1" name="payout_details" placeholder="Enter Payout Details" > 
+                    <input type="textarea" class="form-control" id="exampleInputPayoutDetails1" name="payout_details" placeholder="Enter Payout Details" required> 
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPaymentMethod1">Payment Method</label>
@@ -118,7 +118,7 @@ if($_POST)
                   </div>  
                   <div class="form-group">
                     <label for="exampleInputPaymentStatus1">Payment Status</label>
-                    <input type="text" class="form-control" id="exampleInputPaymentStatus" name="payment_status" placeholder="Enter Payment Status">
+                    <input type="text" class="form-control" id="exampleInputPaymentStatus" name="payment_status" placeholder="Enter Payment Status" required>
                   </div>
                  
                  

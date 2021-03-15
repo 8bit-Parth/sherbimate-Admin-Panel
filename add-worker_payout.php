@@ -77,7 +77,7 @@ if($_POST)
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form role="form" method="post">
+              <form role="form" method="post" id="myform">
                 <div class="card-body">
                   <!--
                   <div class="form-group">
@@ -97,7 +97,7 @@ if($_POST)
                  <div class="form-group">
                     <label for="exampleInputWorkerID1">Worker ID</label>
                     
-                    <select name="Worker" class="form-control">
+                    <select name="Worker" class="form-control" required>
                         <?php 
                             $q = mysqli_query($connection, "select * from worker_master") or die(mysqli_error($connection));
                             while($data = mysqli_fetch_array($q))
