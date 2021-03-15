@@ -98,7 +98,7 @@ if($_POST)
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form role="form" method="post">
+              <form role="form" method="post" id="myform">
                 <div class="card-body">
                  
                   <div class="form-group">
@@ -123,6 +123,7 @@ if($_POST)
                          */
                     </select>
                     -->
+                    
                     <?php
                         
                         $q = mysqli_query($connection, "select * from service_master") or die(mysqli_error($connection));
@@ -185,7 +186,7 @@ if($_POST)
                   </div>
                   <div class="form-group">
                     <label for="exampleInputWorkerExpertise1">Worker Expertise</label>
-                    <input type="text" class="form-control" id="exampleInputWorkerExpertise1" name="worker_expertise" placeholder="Enter Worker Expertise">
+                    <input type="text" class="form-control" id="exampleInputWorkerExpertise1" name="worker_expertise" placeholder="Enter Worker Expertise" required="">
                   </div>
                  
                  

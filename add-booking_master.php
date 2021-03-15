@@ -81,7 +81,7 @@ if($_POST)
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form role="form" method="post">
+              <form role="form" method="post" id="myform">
                 <div class="card-body">
                     
                     <div class="form-group">
@@ -124,7 +124,7 @@ if($_POST)
                   </div>
                   <div class="form-group">
                     <label for="exampleInputBookingStatus1">Booking Status</label>
-                    <input type="text" class="form-control" id="exampleInputBookingStatus1" name="booking_status" placeholder="Enter Booking Status" >
+                    <input type="text" class="form-control" id="exampleInputBookingStatus1" name="booking_status" placeholder="Enter Booking Status" required>
                   </div>
                  
                  
