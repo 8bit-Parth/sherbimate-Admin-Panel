@@ -96,8 +96,8 @@ if($_POST)
                  
                  <div class="form-group">
                     <label for="exampleInputWorkerID1">Worker ID</label>
-                    
                     <select name="Worker" class="form-control" required>
+                    <option value="" disabled selected>Select Worker</option>
                         <?php 
                             $q = mysqli_query($connection, "select * from worker_master") or die(mysqli_error($connection));
                             while($data = mysqli_fetch_array($q))

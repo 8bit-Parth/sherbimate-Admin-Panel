@@ -82,8 +82,8 @@ if($_POST)
                     
                   <div class="form-group">
                     <label for="exampleInputWorkerID1">Worker ID</label>
-                    
                     <select name="worker" class="form-control">
+                    <option value="" disabled selected>Select Worker</option>
                         <?php 
                             $q = mysqli_query($connection, "select * from worker_master") or die(mysqli_error($connection));
                             while($data = mysqli_fetch_array($q))
@@ -97,8 +97,8 @@ if($_POST)
                     
                   <div class="form-group">
                     <label for="exampleInputUserID1">User ID</label>
-                    
                     <select name="user" class="form-control" required>
+                    <option value="" disabled selected>Select User</option>
                         <?php 
                             $q = mysqli_query($connection, "select * from user_master") or die(mysqli_error($connection));
                             while($data = mysqli_fetch_array($q))
