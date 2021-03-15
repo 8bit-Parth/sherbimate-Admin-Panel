@@ -86,8 +86,8 @@ if($_POST)
                     
                     <div class="form-group">
                     <label for="exampleInputBookingID1">Booking ID</label>
-                    
                     <select name="booking" class="form-control" required>
+                    <option value="" disabled selected>Select Booking</option>    
                         <?php 
                             $q = mysqli_query($connection, "select * from booking_master") or die(mysqli_error($connection));
                             while($data = mysqli_fetch_array($q))
