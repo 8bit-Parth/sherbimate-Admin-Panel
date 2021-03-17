@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Log in (v2)</title>
+  <title>Sherbimet | Sign In</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -20,12 +20,12 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href= "index2.html" class="h1"><b>Admin</b>LTE</a>
+      <a href= "index2.html" class="h1"><b>Sherbimet & Co.</b></a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
-      <form action= "index3.html" method="post">
+      <form action= "loginvalidation.php" method="post">
         <div class="input-group mb-3">
           <input type="email" class="form-control" placeholder="Email">
           <div class="input-group-append">
@@ -52,30 +52,34 @@
             </div>
           </div>
           <!-- /.col -->
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
-          </div>
+          
           <!-- /.col -->
         </div>
-      </form>
+          <div>
+              <input type="submit" value="Sign In" class="btn btn-primary btn-block">
+             <!--<button type="submit" class="btn btn-primary btn-block">Sign In</button> -->
+                <!--<a class="btn btn-primary" href="home.php" align="center">Sign in</a>-->  
 
-      <div class="social-auth-links text-center mt-2 mb-3">
+          </div>
+      </form> 
+
+      <!--<div class="social-auth-links text-center mt-2 mb-3">
         <a href="#" class="btn btn-block btn-primary">
           <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
         </a>
         <a href="#" class="btn btn-block btn-danger">
           <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
         </a>
-      </div>
+      </div> -->
       <!-- /.social-auth-links -->
 
-      <p class="mb-1">
+     <!-- <p class="mb-1">
         <a href="forgot-password.html">I forgot my password</a>
       </p>
       <p class="mb-0">
         <a href="register.html" class="text-center">Register a new membership</a>
       </p>
-    </div>
+    </div> -->
     <!-- /.card-body -->
   </div>
   <!-- /.card -->
