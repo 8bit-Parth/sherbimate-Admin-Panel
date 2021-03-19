@@ -1,4 +1,17 @@
 
+<?php
+session_start();
+
+$con = mysqli_connect('localhost', 'root');
+if($con){
+	// echo "conenction successful";
+}else{
+	echo "no connection";
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

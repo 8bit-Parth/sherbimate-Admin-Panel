@@ -294,7 +294,8 @@
           
           <li class="nav-header">Settings</li>
           <li class="nav-item">
-            <a href="login.php" class="nav-link">
+          <?php echo $_SESSION['email']?>     
+            <a href="logout.php" class="nav-link">
               <i class="fas fa-sign-out-alt"></i>
               <p>Logout</p>
             </a>
