@@ -277,11 +277,25 @@
                 </a>
               </li>
               </ul>    
+          
+          
+          
+          
+          
+          
+                  
+          
+           
           </li>
-         <li class="nav-header">Settings</li>
-          <li class="nav-item">     
+
+          
+          
+          
+          
+          <li class="nav-header">Settings</li>
+          <li class="nav-item">
+          <?php echo $_SESSION['email']?>     
             <a href="logout.php" class="nav-link">
-               <!--<?php echo $_SESSION['email']?> -->
               <i class="fas fa-sign-out-alt"></i>
               <p>Logout</p>
             </a>
