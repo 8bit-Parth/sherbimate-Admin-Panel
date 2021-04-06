@@ -19,13 +19,13 @@ if(isset($_POST['submit'])){
 
 	$row = mysqli_num_rows($query);
 		if($row == 1){
-			echo "login successful";
+			echo "login successful"."</br>";
 			$_SESSION['email'] = $email;
                         $_SESSION['password'] = $password;
 			header('Location:home.php');
                         exit;
 		}else{
-			echo "login failed";
+			echo "login failed"."</br>";
 //			header('Location:home.php');
 		}
 
