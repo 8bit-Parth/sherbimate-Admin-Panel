@@ -2,21 +2,14 @@
 session_start();
 require './class/at-class.php';
 
-<<<<<<< Updated upstream
 if($_GET)
 {
-<<<<<<< Updated upstream
-    $editid = $_GET['eid'];
-=======
-$editid = $_GET['admin_id'];
->>>>>>> Stashed changes
-=======
+
     $editid = $_GET['admin_id'];
->>>>>>> Stashed changes
  
  if(!isset($_GET['admin_id']) || empty($_GET['admin_id']))
  {
-     //header("location:display-admin_master.php");
+     header("location:display-admin_master.php");
  }
 
 $selectq = mysqli_query($connection, "select  * from admin_master where admin_id='{$editid}'") or die(mysqli_error($connection));
@@ -44,7 +37,7 @@ if($_POST)
 }
 }
  else {
-    header("Location: add-admin_master.php");
+    header("Location: display-admin_master.php");
     exit;
 }
 
@@ -216,8 +209,3 @@ $(function () {
 </style>
 </body>
 </html>
-
-
-
-
-    
