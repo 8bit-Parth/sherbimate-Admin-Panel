@@ -2,11 +2,15 @@
 session_start();
 require './class/at-class.php';
 
+<<<<<<< Updated upstream
 if($_GET)
 {
     $editid = $_GET['eid'];
+=======
+$editid = $_GET['admin_id'];
+>>>>>>> Stashed changes
  
- if(!isset($_GET['eid']) || empty($_GET['eid']))
+ if(!isset($_GET['admin_id']) || empty($_GET['admin_id']))
  {
      //header("location:display-admin_master.php");
  }
