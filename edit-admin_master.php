@@ -5,9 +5,13 @@ require './class/at-class.php';
 <<<<<<< Updated upstream
 if($_GET)
 {
+<<<<<<< Updated upstream
     $editid = $_GET['eid'];
 =======
 $editid = $_GET['admin_id'];
+>>>>>>> Stashed changes
+=======
+    $editid = $_GET['admin_id'];
 >>>>>>> Stashed changes
  
  if(!isset($_GET['admin_id']) || empty($_GET['admin_id']))
@@ -23,7 +27,7 @@ print_r($selectrow);
  
 if($_POST)
 {   
-//    $admin_id = $_POST['admin_id'];
+    $admin_id = $_POST['admin_id'];
     $admin_name = $_POST['admin_name'];
     $admin_email = $_POST['admin_email'];
     $admin_password = $_POST['admin_password'];
@@ -38,6 +42,10 @@ if($_POST)
         echo "<script>alert('Record Updated');window.location='display-admin_master.php'</script>"; 
     }
 }
+}
+ else {
+    header("Location: add-admin_master.php");
+    exit;
 }
 
 ?>
@@ -116,7 +124,7 @@ if($_POST)
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form role="form" method="post" id="myform">
+              <form name="update" role="form" action="" method="post" id="myform">
                   <input type="hidden" name="admin_id" value="<?php if($_GET){ echo $selectrow['admin_id'];} ?>">
                 <div class="card-body">
                   <div class="form-group">
@@ -136,7 +144,7 @@ if($_POST)
 
                 <div class="card-footer">
                     <input type="submit" value="Update" class="btn btn-primary">
-                    <input type ="reset" value="Reset" class="btn btn-danger">
+                    <input type ="reset" value="Reset Form" class="btn btn-danger">
                   <button type="button" onclick="window.location='display-admin_master.php';" class="btn btn-info">View</button> 
                 </div>
               </form>
