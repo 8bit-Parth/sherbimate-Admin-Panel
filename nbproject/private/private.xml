@@ -3,43 +3,28 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< Updated upstream
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/themepart/navbar.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/themepart/sidebar.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/loginvalidation.php</file>
+            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/edit-worker_master.php</file>
+            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/edit-feedback_master.php</file>
+            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/edit-user_master.php</file>
+            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/edit-booking_master.php</file>
             <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/add-payment_master.php</file>
             <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/edit-sub_services.php</file>
+            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/edit-payment_master.php</file>
+            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/add-service_master.php</file>
             <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/add-worker_payout.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/tables.php</file>
+            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/display-sub_services.php</file>
             <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/add-worker_master.php</file>
             <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/add-sub_services.php</file>
+            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/add-package_master.php</file>
             <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/edit-admin_master.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/display-admin_master.php</file>
             <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/add-feedback_master.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/form.php</file>
+            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/edit-service_master.php</file>
             <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/display-feedback_master.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/display-worker_payout.php</file>
+            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/add-user_master.php</file>
             <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/display-user_master.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/display-booking_master.php</file>
+            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/edit-worker_payout.php</file>
             <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/add-booking_master.php</file>
             <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/edit-package_master.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/home.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/logoutpage.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/display-service_master.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/add-service_master.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/login.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/display-worker_master.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/display-sub_services.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/add-package_master.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/display-package_master.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/display-payment_master.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/register.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/add-admin_master.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/add-user_master.php</file>
-=======
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/loginvalidation.php</file>
-            <file>file:/C:/xampp/htdocs/sherbimet-AdminPanel/login.php</file>
->>>>>>> Stashed changes
         </group>
     </open-files>
 </project-private>

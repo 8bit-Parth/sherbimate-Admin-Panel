@@ -3,8 +3,8 @@ session_start();
 require './class/at-class.php';
 
 if($_POST)
-{   //$payment_id  = $_POST['payment_id '];
-    $booking_id  = $_POST['booking_id '];
+{   //$payment_id  = $_POST['payment_id'];
+    $booking_id  = $_POST['booking_id'];
     $payment_amount = $_POST['payment_amount'];
     $payout_details = $_POST['payout_details'];
     $payment_method = $_POST['payment_method'];
@@ -86,7 +86,7 @@ if($_POST)
                     
                     <div class="form-group">
                     <label for="exampleInputBookingID1">Booking ID</label>
-                    <select name="booking" class="form-control" required>
+                    <select name="booking_id" class="form-control" required>
                     <option value="" disabled selected>Select Booking</option>    
                         <?php 
                             $q = mysqli_query($connection, "select * from booking_master") or die(mysqli_error($connection));
@@ -96,8 +96,6 @@ if($_POST)
                             }                            
                         ?>
                     </select>
-                    
-                  
                   </div>
                     
                   <div class="form-group">

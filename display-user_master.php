@@ -69,7 +69,7 @@
                   <tr>
                     <th>Id</th>
                     <th>Name</th>
-                    <th>Gender</th>
+                    <th>Area</th>
                     <th>Email</th>
                     <th>Mobile</th>
                     <th>Address</th>
@@ -100,7 +100,7 @@
                             echo "<tr>";
                             echo "<td>{$userrow['user_id']}</td>";
                             echo "<td>{$userrow['user_name']}</td>";
-                            echo "<td>{$userrow['user_gender']}</td>";
+                            echo "<td>{$userrow['user_area']}</td>";
                             echo "<td>{$userrow['user_email']}</td>";
                             echo "<td>{$userrow['user_mobile']}</td>";
                             echo "<td>{$userrow['user_address']}</td>";
@@ -118,7 +118,7 @@
                   <tr>
                     <th>Id</th>
                     <th>Name</th>
-                    <th>Gender</th>
+                    <th>Area</th>
                     <th>Email</th>
                     <th>Mobile</th>
                     <th>Address</th>

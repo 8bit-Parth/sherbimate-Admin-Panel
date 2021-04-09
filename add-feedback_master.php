@@ -4,8 +4,8 @@ require './class/at-class.php';
 
 if($_POST)
 {   //$feedback_id = $_POST['feedback_id '];
-    $worker_id = $_POST['worker_id '];
-    $user_id  = $_POST['user_id '];
+    $worker_id = $_POST['worker_id'];
+    $user_id  = $_POST['user_id'];
     $feedback_details = $_POST['feedback_details'];
     $feedback_date = $_POST['feedback_date'];
     
@@ -82,7 +82,7 @@ if($_POST)
                     
                   <div class="form-group">
                     <label for="exampleInputWorkerID1">Worker ID</label>
-                    <select name="worker" class="form-control">
+                    <select name="worker_id" class="form-control">
                     <option value="" disabled selected>Select Worker</option>
                         <?php 
                             $q = mysqli_query($connection, "select * from worker_master") or die(mysqli_error($connection));
@@ -97,7 +97,7 @@ if($_POST)
                     
                   <div class="form-group">
                     <label for="exampleInputUserID1">User ID</label>
-                    <select name="user" class="form-control" required>
+                    <select name="user_id" class="form-control" required>
                     <option value="" disabled selected>Select User</option>
                         <?php 
                             $q = mysqli_query($connection, "select * from user_master") or die(mysqli_error($connection));

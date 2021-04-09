@@ -6,7 +6,7 @@ if($_POST)
 {   
     //$sub_service_id = $_POST['sub_service_id'];
     $sub_service_name = $_POST['sub_service_name'];
-    $service_id = $_POST['service'];
+    $service_id = $_POST['service_id'];
     
     $q = mysqli_query($connection, "insert into sub_services (sub_service_name,service_id) values('{$sub_service_name}','{$service_id}')") or die(mysqli_error($connection));
     
@@ -23,7 +23,7 @@ if($_POST)
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sub Service | Add</title>
+  <title>Sub Services | Add</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -101,7 +101,7 @@ if($_POST)
                     <div class="form-group">
                     <label for="exampleInputServiceID1">Service ID</label>
                     
-                    <select name="service" class="form-control" required>
+                    <select name="service_id" class="form-control" required>
                         <option value="" disabled selected>Select Service</option>
                         <?php 
                             $q = mysqli_query($connection, "select * from service_master") or die(mysqli_error($connection));

@@ -5,33 +5,17 @@ require './class/at-class.php';
 if($_POST)
 {   //$worker_id  = $_POST['worker_id '];
     $worker_name = $_POST['worker_name'];
-    $service_id  = $_POST['service'];
-    $worker_photo  = $_POST['worker_photo'];
-    $worker_gender  = $_POST['worker_gender'];
+    $service_id = $_POST['service_id'];
+    $worker_photo = $_POST['worker_photo'];
+    $worker_gender = $_POST['worker_gender'];
     $worker_email = $_POST['worker_email'];
     $worker_mobile  = $_POST['worker_mobile'];
     $worker_documents = $_POST['worker_documents'];
     $worker_details = $_POST['worker_details'];
     $worker_expertise = $_POST['worker_expertise'];
-                        
-    $temp = null;                 
-    $arr = array();             
-    $arr = $_POST['service'];                 
-    for($i=0;$i<$arr.sizeof();$i++)
-    {
-        if($i==0)
-        {
-            $temp = $temp.$arr[$i];
-        }
-        else 
-        {
-            $temp = $temp.",".$arr[$i];
-        }
-    }
-    
    
-    $q = mysqli_query($connection, "insert into worker_master (worker_name,worker_photo,worker_gender,worker_email,worker_mobile,worker_documents,worker_details,worker_expertise,service_id)values('{$worker_name}','{$worker_photo}','{$worker_gender}','{$worker_email}','{$worker_mobile}','{$worker_documents}','{$worker_details}','{$worker_expertise}','{$temp}')") or die(mysqli_error($connection));
-    
+    $q = mysqli_query($connection, "insert into worker_master (worker_name,service_id,worker_photo,worker_gender,worker_email,worker_mobile,worker_documents,worker_details,worker_expertise) values ('{$worker_name}','{$service_id}','{$worker_photo}','{$worker_gender}','{$worker_email}','{$worker_mobile}','{$worker_documents}','{$worker_details}','{$worker_expertise}')") or die(mysqli_error($connection));
+
     if($q)
     {
         echo "<script>alert('Record Added')</script>";
@@ -105,45 +89,22 @@ if($_POST)
                     <label for="exampleInputWorkerName1">Worker Name</label>
                     <input type="text" class="form-control" id="exampleInputWorkerName1" name="worker_name" placeholder="Enter Worker Name" required>
                   </div>
-             
-                  
-                  <div class="form-group">
+                
+                <div class="form-group">
                     <label for="exampleInputServiceID1">Service ID</label>
-                    <!--
-                    <select name="service[]" class="form-control" multiple>
-                        <?php
-                        /*
+                    
+                    <select name="service_id" class="form-control" required>
+                        <option value="" disabled selected>Select Service</option>
+                        <?php 
                             $q = mysqli_query($connection, "select * from service_master") or die(mysqli_error($connection));
                             while($data = mysqli_fetch_array($q))
                             {
                                 echo "<option value='{$data['service_id']}'>{$data['service_name']}</option>";
                             }                            
-                        */
-                         ?>
-                         */
+                        ?>
                     </select>
-                    -->
+                </div>
                     
-                    <?php
-                        
-                        $q = mysqli_query($connection, "select * from service_master") or die(mysqli_error($connection));
-                            while($data = mysqli_fetch_array($q))
-                            {
-                                echo "<br> <input type=checkbox name=service[] value='{$data['service_id']}'> {$data['service_name']}";
-                            }
-                    
-                    ?>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                  
-                  </div>
-                  
                     <div class="form-group">
                     <label for="exampleInputWorkerPhoto1">Worker Photo</label>
                     <div class="input-group">

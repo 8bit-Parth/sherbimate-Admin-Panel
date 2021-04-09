@@ -69,7 +69,7 @@
                   <tr>
                     <th>Feedback Id</th>
                     <th>Worker Id</th>
-                    <th>USER Id</th>
+                    <th>User Id</th>
                     <th>Details</th>
                     <th>Date</th>
                     <th>Action</th>

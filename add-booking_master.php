@@ -3,7 +3,7 @@ session_start();
 require './class/at-class.php';
 
 if($_POST)
-{   ///$booking_id = $_POST['booking_id'];
+{   //$booking_id = $_POST['booking_id'];
     $worker_id = $_POST['worker_id'];
     $package_id = $_POST['package_id'];
     //$sub_service_id = $_POST['sub_service_id'];
@@ -86,7 +86,7 @@ if($_POST)
                     
                     <div class="form-group">
                     <label for="exampleInputWorkerID1">Worker ID</label>
-                    <select name="worker" class="form-control" required>
+                    <select name="worker_id" class="form-control" required>
                     <option value="" disabled selected>Select Worker</option>    
                         <?php 
                             $q = mysqli_query($connection, "select * from worker_master") or die(mysqli_error($connection));
@@ -101,7 +101,7 @@ if($_POST)
                     
                     <div class="form-group">
                     <label for="exampleInputPackageID1">Package ID</label>
-                    <select name="package" class="form-control" required>
+                    <select name="package_id" class="form-control" required>
                     <option value="" disabled selected>Select Package</option>    
                         <?php 
                             $q = mysqli_query($connection, "select * from package_master") or die(mysqli_error($connection));
