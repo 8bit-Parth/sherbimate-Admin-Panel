@@ -14,7 +14,7 @@ if($_GET)
 
 $selectq = mysqli_query($connection, "select * from worker_master where worker_id='{$editid}'") or die(mysqli_error($connection));
 $selectrow = mysqli_fetch_array($selectq);
-print_r($selectrow);
+//print_r($selectrow);
 
  $msg = "";
  
@@ -33,6 +33,7 @@ if($_POST)
     
     
     $query = mysqli_query($connection, "update worker_master set worker_name='{$worker_name}',service_id='{$service_id}',worker_photo='{$worker_photo}',worker_gender='{$worker_gender}',worker_email='{$worker_email}',worker_mobile='{$worker_mobile}',worker_documents='{$worker_documents}',worker_details='{$worker_details}',worker_expertise='{$worker_expertise}' where worker_id='{$worker_id}'") or die(mysqli_error($connection));
+//    $query = mysqli_query($connection, "update worker_master set worker_name='{$worker_name}',worker_photo='{$worker_photo}',worker_gender='{$worker_gender}',worker_email='{$worker_email}',worker_mobile='{$worker_mobile}',worker_documents='{$worker_documents}',worker_details='{$worker_details}',worker_expertise='{$worker_expertise}' where worker_id='{$worker_id}'") or die(mysqli_error($connection));
     header("location:display-worker_master.php");
 
     
@@ -130,6 +131,20 @@ if($_POST)
                     <label for="exampleInputWorkerName1">Worker Name</label>
                     <input type="text" class="form-control" id="exampleInputWorkerName1" name="worker_name" value="<?php if($_GET){ echo $selectrow['worker_name'];} ?>"placeholder="Enter Worker Name" required>
                   </div>
+                <div class="form-group">
+                    <label for="exampleInputServiceID1">Service ID</label>
+                    
+                    <select name="service_id" class="form-control" required>
+                        <option value="" disabled selected>Select Service</option>
+                        <?php 
+                            $q = mysqli_query($connection, "select * from service_master") or die(mysqli_error($connection));
+                            while($data = mysqli_fetch_array($q))
+                            {
+                                echo "<option value='{$data['service_id']}'>{$data['service_name']}</option>";
+                            }                            
+                        ?>
+                    </select>
+                </div>
                   <div class="form-group">
                     <label for="exampleInputWorkerPhoto1">Worker Photo</label>
                     <div class="input-group">
@@ -140,6 +155,7 @@ if($_POST)
                     </div>
                     <div class="form-group">
                     <label for="exampleInputWorkerGender1">Worker Gender</label>
+                    
                      <div class="custom-control custom-radio">
                           <input class="custom-control-input" type="radio" id="customRadio1" Value="Male" name="worker_gender" value="<?php if($_GET){ echo $selectrow['worker_gender'];} ?>" required>
                           <label for="customRadio1" class="custom-control-label">Male</label>
