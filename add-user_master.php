@@ -92,6 +92,22 @@ if($_POST)
                     <label for="exampleInputUserArea1">User Area</label>
                     <select name="user_area" class="form-control" required>
                         <option value="" selected disable>Select User Area</option>
+                        <option value="Colaba">Colaba</option>
+                        <option value="Bandra">Bandra</option>
+                        <option value="Borivali">Borivali</option>
+                        <option value="Ghatkopar">Ghatkopar</option>
+                        <option value="Mulun">Mulun</option>
+                        <option value="Dadar">Dadar</option>
+                        <option value="Thane">Thane</option>
+                        <option value="Church Gate">Church Gate</option>
+                        <option value="Marins">Marins</option>
+                        <option value="Juhu">Juhu</option>
+                        <option value="Valkeshvar">Valkeshvar</option>
+                        <option value="Andheri">Andheri</option>
+                        <option value="Parel">Parel</option>
+                        <option value="Malad">Malad</option>
+                        <option value="Malabar hills">Malabar hills</option>
+                        <option value="Versova">Versova</option>
                     </select>
                   </div>
 
