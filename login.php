@@ -2,14 +2,33 @@
 <?php
 session_start();
 
-$con = mysqli_connect('localhost', 'root');
-if($con){
+//$con = mysqli_connect('localhost', 'root');
+//if($con){
 	// echo "conenction successful";
-}else{
-	echo "no connection";
-}
+//}else{
+//	echo "no connection";
+//}
 
+?>
 
+<?php
+//    if(isset($_POST['submit']))
+//    {
+//        $email = $_POST['admin_email'];
+//	$password = $_POST['admin_password'];
+//        $_SESSION['email'] = $email;
+//        $_SESSION['password'] = $password;
+//        $_SESSION['logged_in'] = 0;
+//        require './loginvalidation.php';
+//    }
+//    
+//    if(isset($_SESSION['logged_in']))
+//    {
+//        echo $_SESSION['logged_in'];
+//    }
+// else {
+//        echo 'Session not set';
+//}
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +57,7 @@ if($con){
     <div class="card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
-      <form action= "loginvalidation.php" method="post">
+      <form action="loginvalidation.php" method="post">
         <div class="input-group mb-3">
           <input type="text" class="form-control" name="admin_email" placeholder="Email">
           <div class="input-group-append">
@@ -55,7 +74,7 @@ if($con){
             </div>
           </div>
         </div>
-        <div class="row">
+<!--        <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
               <input type="checkbox" id="remember">
@@ -64,10 +83,10 @@ if($con){
               </label>
             </div>
           </div>
-          <!-- /.col -->
+           /.col 
           
-          <!-- /.col -->
-        </div>
+           /.col 
+        </div>-->
           <div>
               <input type="submit" value="Sign In" name="submit" class="btn btn-primary btn-block">
              <!--<button type="submit" class="btn btn-primary btn-block">Sign In</button> -->

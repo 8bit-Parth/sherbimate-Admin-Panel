@@ -1,6 +1,7 @@
 <?php
-session_start();
+//session_start();
 require './class/at-class.php';
+include'./loginvalidation.php';
 
 if($_POST)
 {   
